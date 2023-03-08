@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style: none;
+        }
+        .mi-box {
+            width: 1226px;
+            margin: 0 auto;
+        }
+        .mi-box ul {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .mi-box ul li {
+            width: 234px;
+            height: 300px;
+            background-color: chartreuse;
+            transition: .3s;
+            margin-bottom: 14px;
+        }
+        .mi-box ul li:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 10px rgba(0,0,0,.3);
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="mi-box">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>

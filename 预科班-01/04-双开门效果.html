@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: flex;
+            justify-content: space-between;
+            width: 1366px;
+            height: 600px;
+            background-color: brown;
+            margin: 0 auto;
+            background: url(./img/bg.jpg) no-repeat;
+            overflow: hidden;
+        }
+        .y-box,
+        .z-box {
+            width: 50%;
+            height: 600px;
+            background-color: aqua;
+            background: url(./img/fm.jpg) no-repeat;
+            transition: .5s;
+        }
+        .y-box {
+            background-position: -683px 0;
+        }
+        .box:hover .z-box {
+            transform: translatex(-100%);
+        }
+        .box:hover .y-box {
+            transform: translatex(100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="z-box"></div>
+        <div class="y-box"></div>
+    </div>
+</body>
+</html>

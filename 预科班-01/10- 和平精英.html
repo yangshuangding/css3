@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <style>
+        .w {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .jy-list li {
+            width: 249px;
+            height: 210px;
+            background-color: pink;
+        }
+
+        .jy-list li a {
+            display: block;
+        }
+
+        .jy-list .pic {
+            position: relative;
+            height: 144px;
+            background-color: red;
+            overflow: hidden;
+        }
+
+        .jy-list .pic:hover .mask {
+            transform:translate(-50%, -50%) scale(1);
+            opacity: 1;
+        }
+
+        .jy-list .pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .jy-list .pic .mask {
+            /* 以pic为父级 子绝父相 */
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 58px;
+            height: 58px;
+            transform:translate(-50%, -50%) scale(5);
+            transition: .3s;
+            overflow: hidden;
+            opacity: 0;
+        }
+
+        .jy-list h3 {
+            padding: 10px;
+            font-size: 16px;
+            font-weight: normal;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w">
+        <div class="jy-list">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="pic">
+                            <img src="./img/party.jpeg" alt="">
+                            <div class="mask"><img src="./img/play.png" alt=""></div>
+                        </div>
+                        <h3>“初火”音乐概念片：四圣觉醒......</h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

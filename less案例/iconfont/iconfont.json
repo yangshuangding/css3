@@ -1,0 +1,51 @@
+{
+  "id": "2728269",
+  "name": "作业图标",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "6652570",
+      "name": "团队",
+      "font_class": "tuandui",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "7328098",
+      "name": "服务",
+      "font_class": "fuwu",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "11372639",
+      "name": "爱心",
+      "font_class": "aixin",
+      "unicode": "e8ab",
+      "unicode_decimal": 59563
+    },
+    {
+      "icon_id": "15524169",
+      "name": "产品",
+      "font_class": "chanpin",
+      "unicode": "e68c",
+      "unicode_decimal": 59020
+    },
+    {
+      "icon_id": "18230508",
+      "name": "邮 箱",
+      "font_class": "youxiang",
+      "unicode": "e7bd",
+      "unicode_decimal": 59325
+    },
+    {
+      "icon_id": "19612907",
+      "name": "首 页",
+      "font_class": "shouye",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    }
+  ]
+}

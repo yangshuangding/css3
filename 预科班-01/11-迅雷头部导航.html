@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- <link rel="stylesheet" href="./less/less的基本应用.css"> -->
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+         .w {
+            width: 1200px;
+            margin: 0 auto;
+         }
+         .nav {
+            height: 60px;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+         }
+         .nav ul {
+            width: 607px;
+            height: 60px;
+            /* background-color: coral; */
+            display: flex;
+            justify-content: space-between;
+
+         }
+         .nav ul li a {
+            display: block;
+            color: #111;
+            font-size: 14px;
+            padding: 20px 0;
+            position: relative;
+         }
+         .txt {
+            width: 100%;
+            height: 3px;
+            background-color: #3f85ff;
+            position: absolute;
+            bottom: -1px;
+            transform-origin: 50% 0%;
+            transition: .3s;
+            transform: scale(0.01,1);
+            opacity: 0;
+         }
+         .nav ul li a:hover .txt {
+            transform: scale(1);
+            opacity: 1;
+         }
+         .txt1 {
+            width: 100%;
+            height: 3px;
+            background-color: #3f85ff;
+            position: absolute;
+            bottom: -1px;
+            transform-origin: 50% 0%;
+         }
+         .nr-box {
+            left: 0;
+            bottom: -400px;
+            position: absolute;
+            width: 476px;
+            height: 400px;
+            background-color: pink;
+            display: flex;
+         }
+         .nav ul li:nth-child(2) {
+            position: relative;
+         }
+         .xl-box1,
+         .xl-box2,
+         .xl-box3 {
+            flex: 1;
+         }
+    </style>
+</head>
+<body>
+    <div class="w">
+        <div class="nav">
+            <div class="logo"><img src="./img/logo.svg" alt=""></div>
+            <div class="list">
+                <ul>
+                    <li><a href="#">首页<div class="txt1"></div></a></li>
+                    <li><a href="#">所有产品<div class="txt"></div></a>
+                        <div class="nr-box">
+                            <div class="xl-box1">
+                                <dl>
+                                    <dt>迅雷</dt>
+                                    <dd>Windows版</dd>
+                                    <dd>Mac版</dd>
+                                    <dd>Android版</dd>
+                                    <dd>iOS版</dd>
+                                    <dd>NAS版</dd>
+                                    <dd>TV版</dd>
+                                    <dd>迅雷会员</dd>
+                                </dl>
+                            </div>
+                            <div class="xl-box2">
+                                <dl>
+                                    <dt>影音娱乐</dt>
+                                    <dd>迅雷影音Windows版</dd>
+                                    <dd>迅雷影音Mac版</dd>
+                                    <dd>迅雷直播Android版</dd>
+                                    <dd>迅雷直播Web版</dd>
+                                    <dd>迅雷游戏</dd>
+                                    <dd>Hiya语音</dd>
+                                </dl>
+                            </div>
+                            <div class="xl-box3">
+                                <dl>
+                                    <dt>其他</dt>
+                                    <dd>迅雷链</dd>
+                                    <dd>非同数艺</dd>
+                                    <dd>网心云</dd>
+                                    <dd>星域云</dd>
+                                    <dd>迅雷快鸟</dd>
+                                    <dd>迅雷下载JS-SDK</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">区块链<div class="txt"></div></a></li>
+                    <li><a href="#">加入迅雷<div class="txt"></div></a></li>
+                    <li><a href="#">关于我们<div class="txt"></div></a></li>
+                    <li><a href="#">Investor Relations<div class="txt"></div></a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

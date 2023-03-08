@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li {
+            list-style: none;
+        }
+        .box {
+            width: 834px;
+            height: 135px;
+            margin: 0 auto;
+        }
+        .box ul {
+            display: flex;
+            justify-content: space-between;
+        }
+        .box li {
+            width: 200px;
+            height: 131px;
+            background-color: aquamarine;
+            position: relative;
+            overflow: hidden;
+        }
+        li img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .mask {
+            position: absolute;
+            bottom: 0;
+            width: 200px;
+            height: 131px;
+            background: rgba(0,0,0,.5) url(./img/play-1.png) no-repeat center center;
+            transform: rotate(90deg);
+            transform-origin: left bottom;
+            transition: .3s;
+        }
+        .box li:hover .mask {
+            transform: rotate(0deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li><img src="./img/jc.jpg" alt=""><div class="mask"></div></li>
+            <li><img src="./img/jq.jpg" alt=""><div class="mask"></div></li>
+            <li><img src="./img/ps.jpg" alt=""><div class="mask"></div></li>
+            <li><img src="./img/web.jpg" alt=""><div class="mask"></div></li>
+        </ul>
+    </div>
+</body>
+</html>
