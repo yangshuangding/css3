@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3919868 */
+  src: url('iconfont.woff2?t=1678074032768') format('woff2'),
+       url('iconfont.woff?t=1678074032768') format('woff'),
+       url('iconfont.ttf?t=1678074032768') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sz:before {
+  content: "\e8b7";
+}
+
+.icon-dz:before {
+  content: "\e658";
+}
+
+.icon-hy:before {
+  content: "\e61d";
+}
+
+.icon-sc:before {
+  content: "\e604";
+}
+
+.icon-zjt:before {
+  content: "\e8f2";
+}
+
+.icon-xjt:before {
+  content: "\e8f3";
+}
+
+.icon-sjt:before {
+  content: "\e8f4";
+}
+
+.icon-gwc:before {
+  content: "\e600";
+}
+
+.icon-wb:before {
+  content: "\e601";
+}
+
+.icon-wx:before {
+  content: "\e610";
+}
+
+.icon-ss:before {
+  content: "\e602";
+}
+
+.icon-wt:before {
+  content: "\e605";
+}
+
+.icon-zx:before {
+  content: "\e60f";
+}
+
+.icon-yjt:before {
+  content: "\e8f1";
+}
+
+.icon-sj:before {
+  content: "\e603";
+}
+

@@ -1,0 +1,490 @@
+.body {
+    font: 14px/1.8 "微软正黑体","Microsoft JhengHei","Microsoft Yahei","微软雅黑","Hiragino Sans GB","冬青黑体","Arial","Helvetica","SimHei","黑体","STXihei","华文细黑",sans-serif;
+}
+// 版心
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+.yang {
+    padding: 4px 8px;
+    margin: 0px 2px 2px 0px;
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+}
+// 人文
+.rw {
+    background-color: #57450e;   
+}
+// 宗教
+.zj {
+    background-color: #802d00;
+}
+// 自然
+.zr {
+    background-color: #219421;
+}
+// 摄影
+.sy {
+    background-color: #ffb700;
+}
+// 轻探险 
+.qtx {
+    background-color: #f505f5;
+}
+// 慢旅行
+.mlx {
+    background-color: #56e012;
+}
+// 文化
+.wh {
+    background-color: #bf0fbf;
+}
+// 亲子
+.qz {
+    background-color: #40ff4d;
+}
+// 顶部的图片及搜索框 S
+.daohangbg {
+    position: relative;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    form {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-60%,-50%);
+        input {
+            position: relative;
+            width: 588px;
+            height: 45px;
+            border-radius: 6px 0 0 6px ;
+            background-color: rgba(255,255,255,.8);
+            padding-left: 30px;
+        }
+        button {
+            position: absolute;
+            right: -90px;
+            width: 89px;
+            height: 45px;
+            border-radius: 0 6px 6px 0;
+            background-color: #b7d637;
+            transition: .3s;
+            i {
+                display: block;
+                width: 24px;
+                height: 24px;
+                margin: 10px 32px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            &:hover {
+                background-color: #7fbd2c;
+            }
+        }
+    }
+}
+// 顶部的图片及搜索框 E
+
+// 旅行时间及路线标签 S
+.yang-nav {
+    width: 1200px;
+    height: 83px;
+    margin-top: 12px;
+    border: 1px solid #e9e9e9;
+    ul {
+        display: flex;
+        .lx {
+            font-size: 16px;
+            color: #606060;
+            width: 108px;
+            height: 41px;
+            padding: 10px 20px;
+        }
+        .nr {
+            margin: 5px 15px 5px 0;
+            padding: 0 8px;
+            height: 28px;
+            line-height: 28px;
+            background-color: #7fbd2c;
+            box-shadow: 0 0 5px rgba(0,0,0,.5);
+            a {
+                color: #fff;
+                font-size: 14px;
+            }
+        }
+        .br {
+            margin: 5px 15px 5px 0;
+            padding: 0 8px;
+            height: 28px;
+            line-height: 28px;
+            a {
+                color: #696969;
+                font-size: 14px;
+            }
+            &:hover {
+                background-color: #7fbd2c;
+                box-shadow: 0 0 5px rgba(0,0,0,.5);
+                a {
+                    color: #fff;
+                    
+                }
+            }
+            &:first-child {
+                background-color: #7fbd2c;
+            }
+        }
+        .bq {
+            font-size: 16px;
+            color: #606060;
+            width: 108px;
+            height: 40px;
+            padding: 10px 20px;
+        }
+        &:first-child {
+            border-bottom: 1px solid #e9e9e9;
+        }
+    }
+}
+// 旅行时间及路线标签 E
+
+// 热门目的地 S
+.yang-rm-box {
+    width: 1200px;
+    height: 445px;
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    .rm-list-box {
+        width: 200px;
+        height: 443px;
+        ul {
+            border-bottom: 0;
+            .md {
+                position: relative;
+                .rm-t {
+                    width: 200px;
+                    height: 68px;
+                    border: 1px solid #e9e9e9;
+                    line-height: 68px;
+                    padding-left: 50px;
+                    color: #6d6d6d;
+                    font-weight: bold;
+                }
+                .rm-c {
+                    display: none;
+                    position: absolute;
+                    right: -412px;
+                    width: 412px;
+                    background-color: #fff;
+                    top: 0;
+                    padding: 22px 36px;
+                    z-index: 1;
+                    border: 1px solid #e8e8e8;
+                    a {
+                        display: inline-block;
+                        margin: 0 22px 22px ;
+                        color: #6d6d6d;
+                        &:hover {
+                            color: #7fbd2c;
+                        }
+                    }
+                }
+                &:hover {
+                    .rm-c {
+                        display: block;
+                        border-left: 0;
+                    }
+                }
+            }
+            .rm {
+                position: relative;
+                .rm-t {
+                    width: 200px;
+                    height: 62px;
+                    border: 1px solid #e9e9e9;
+                    border-top: 0;
+                    line-height: 62px;
+                    padding-left: 50px;
+                    color: #6d6d6d;
+                    font-weight: bold;
+                }
+                &:hover {
+                    color: #7fbd2c;
+                }
+                .rm-c {
+                    display: none;
+                    position: absolute;
+                    right: -412px;
+                    width: 412px;
+                    background-color: #fff;
+                    top: 0;
+                    padding: 22px 36px;
+                    z-index: 1;
+                    border: 1px solid #e8e8e8;
+                    a {
+                        display: inline-block;
+                        margin: 0 22px 22px ;
+                        color: #6d6d6d;
+                        &:hover {
+                            color: #7fbd2c;
+                        }
+                    }
+                }
+                &:hover {
+                    .rm-t {
+                        border-right: 0;
+                    }
+                    .rm-c {
+                        display: block;
+                        border-left: 0;
+                    }
+                } 
+            }
+        }
+    }
+    .rm-map {
+        width: 990px;
+        height: 443px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+// 热门目的地 E
+
+// 主题旅行 S
+.zhut-box {
+    width: 1200px;
+    margin-top: 20px;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .item {
+            width: 382px;
+            height: 445px;
+            margin-bottom: 30px;
+            .item-box {
+                width: 382px;
+                height: 445px;
+                position: relative;
+                a {
+                    height: 445px;
+                    display: block;
+                    .img-box {
+                        width: 382px;
+                        height: 238px;
+                        position: relative;
+                        overflow: hidden;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                            transition: .5s;
+                        }
+                        .yc-xs {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 382px;
+                            height: 238px;
+                            background-color: rgba(0,0,0,.5);
+                            overflow: hidden;
+                            opacity: 0;
+                            transition: .3s;
+                            .yc-cs {
+                                transform: translateX(-50%);
+                                transition: .5s;
+                                span {
+                                    margin: 20px 0 0px 30px;
+                                    &:nth-child(2) {
+                                        margin-left: 0;
+                                    }
+                                    &:nth-child(3) {
+                                        margin-left: 0;
+                                    }
+                                }
+                                .time {
+                                    margin-top: 20px;
+                                    margin-left: 30px;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                        .jiage {
+                            position: absolute;
+                            left: 12px;
+                            bottom: 8%;
+                            color: #fff;
+                            font-size: 14px;
+                            padding: 7px 18px;
+                            background-color: rgba(0,0,0,.7);
+                            transition: .5s;
+                        }
+                    }
+                    .zt-nr {
+                        width: 382px;
+                        height: 207px;
+                        padding: 18px 5% 50px 8%;
+                        border: 1px solid #e9e9e9;
+                        border-top: 0;
+                        .i {
+                            font-size: 18px;
+                            height: 22px;
+                            margin-bottom: 10px;
+                            overflow: hidden;
+                            color: #828282;
+                        }
+                        .w {
+                            width: 330px;
+                            font-size: 18px;
+                            overflow: hidden;
+                            margin-bottom: 20px;
+                            color: #484848;
+                        }
+                        .t {
+                            font-size: 14px;
+                            height: 20px;
+                            overflow: hidden;
+                            color: #797979;
+                        }
+                    }
+                }
+                .shoucang {
+                    // background-color: pink;
+                    height: 40px;
+                    position: absolute;
+                    left: 8%;
+                    bottom: 26px;
+                    width: 200px;
+                    padding-top: 20px;
+                    .sc {
+                        display: inline-block;
+                        background: url(../img/ico.png);
+                        width: 25px;
+                        height: 16px;
+                        background-position: -3px -686px;
+                        margin-right: 10px;
+                    }
+                    .lll {
+                        display: inline-block;
+                        background: url(../img/ico.png);
+                        width: 30px;
+                        height: 16px;
+                        background-position: -68px -686px;
+                        margin-right: 20px;
+                        padding-left: 28px;
+                        color: #989898;
+                        font-size: 14px;
+                        &:hover {
+                            background-position: -68px -707px;
+                        }
+                    }
+                    .zf {
+                        position: relative;
+                        display: inline-block;
+                        background: url(../img/ico.png);
+                        width: 25px;
+                        height: 16px;
+                        background-position: -38px -686px;
+                        margin-left: 20px;
+                        &:hover {
+                            .wb-wx {
+                                display: block;
+                            }
+                        }
+                        .wb-wx {
+                            position: absolute;
+                            bottom: -144px;
+                            left: -50px;
+                            width: 120px;
+                            height: 144px;
+                            display: none;
+                            z-index: 1;
+                            .fx-wb {
+                                height: 72px;
+                                width: 120px;
+                                border: 1px solid #bcbcbc;
+                                border-bottom: 0;
+                                text-align: center;
+                                color: #8d8d8d;
+                                padding-top: 15px;
+                                font-size: 14px;
+                                transition: .3s;
+                                background-color: #fff;
+                                .iconfont {
+                                    font-size: 26px;
+                                    color: #d52b2a;
+                                    transition: .3s;
+                                }
+                                &:hover {
+                                    color: #fff;
+                                    background-color: #d52b2a;
+                                    .iconfont {
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                            .fx-wx {
+                                width: 120px;
+                                height: 72px;
+                                border: 1px solid #bcbcbc;
+                                text-align: center;
+                                color: #8d8d8d;
+                                font-size: 14px;
+                                padding-top: 15px;
+                                transition: .3s;
+                                background-color: #fff;
+                                .iconfont {
+                                    font-size: 26px;
+                                    color: #86c610;
+                                    transition: .3s;
+                                }
+                                &:hover {
+                                    background-color: #86c610;
+                                    color: #fff;
+                                    .iconfont  {
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                            
+                        }                   
+                    }
+                }
+                
+                
+            }
+            &:hover {
+                a {
+                    .img-box {
+                        .jiage {
+                            transform: translateX(20px);
+                            background-color: #7fbd2c;
+                        }
+                        img {
+                            transform: scale(1.1);
+                        }  
+                        .yc-xs {
+                            opacity: 1;
+                                .yc-cs {
+                                    transform: translateX(0);
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+// 主题旅行 E
